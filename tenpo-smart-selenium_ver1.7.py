@@ -65,9 +65,6 @@ driver = webdriver.Chrome(service=service, options=options)
 
 # ブラウザウィンドウを最大化（ブラウザサイズが十分でないとWebページをスクロールできない可能性があるため）
 driver.maximize_window()
-
-email = "let.smakeawish1230@gmail.com"
-password = "gs5T76aAR3R3X"
 driver.get("https://www.temposmart.jp/login")
 driver.find_element(By.NAME, 'email').send_keys(email)
 driver.find_element(By.NAME, 'password').send_keys(password)
